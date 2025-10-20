@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-brand: #254F2E;
+  --color-brand: #008000;
 }
 
 body {
@@ -134,5 +134,63 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+.container {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+/* Small tablets (≥ 640px) */
+@media (min-width: 640px) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+/* Mini laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Laptops (≥ 1280px) */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Desktops (≥ 1536px) */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Large desktops / 2K (≥ 1920px) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* 4K screens (≥ 2560px) */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 1024px;
   }
 }
