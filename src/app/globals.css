@@ -198,3 +198,8 @@ body {
 .clip-banner {
   clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
 }
+
+
+.hero_bottom_curve {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
+}

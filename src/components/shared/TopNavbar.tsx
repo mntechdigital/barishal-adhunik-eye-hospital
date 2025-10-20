@@ -13,7 +13,7 @@ const TopNavbar = async () => {
   return (
     <div className="text-white text-sm">
       <div className="container mx-auto bg-brand border border-brand clip-banner">
-        <div className="flex flex-wrap md:flex-row justify-center items-center gap-3 md:gap-8 py-2 px-6 text-[13px] ">
+        <div className="flex flex-wrap md:flex-row justify-center items-center gap-3 md:gap-8 py-1 px-6 text-[13px] ">
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
             <span>01708-445363</span>
