@@ -11,9 +11,9 @@ const page = () => {
         <Image src={breath} alt="breath" width={20} height={50} />
       </div>
       <div className="mt-5">
-        <p className="flex justify-center items-center gap-2">
-          <span>আমরা আপনার</span>
-          <span className="font-semibold text-brand">বরিশাল আধুনিক চক্ষু হাসপাতালের যত্ন নিচ্ছি।</span>
+        <p className="w-full md:max-w-lg mx-auto text-center leading-10">
+          <span className="text-3xl pe-2">আমরা আপনার</span>
+          <span className="font-bold text-brand text-3xl ">বরিশাল আধুনিক চক্ষু হাসপাতালের যত্ন নিচ্ছি।</span>
         </p>
       </div>
     </div>
