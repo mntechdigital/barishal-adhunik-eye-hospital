@@ -1,11 +1,15 @@
-import React from 'react'
+import HeroSection from "./_components/HeroSection";
+import OurRelationSection from "./_components/OurRelationSection";
+import EyeCareSection from "./_components/EyeCareSection";
 
 const HomePage = () => {
   return (
-    <div className='font-bangla text-4xl '>
-        চিকিৎসা কার্ডের সুবিধা সমূহ
-    </div>
-  )
-}
+    <>
+      <HeroSection />
+      <OurRelationSection />
+      <EyeCareSection />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;
