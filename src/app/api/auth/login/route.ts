@@ -2,9 +2,11 @@ import { generateToken } from "@/utils/tokenCustomization";
 import { validateUser } from "@/utils/validateUser";
 import { loginValidationSchema } from "@/validations/login.validation";
 import { NextRequest, NextResponse } from "next/server";
+import { main } from "../../../../../prisma/seedAdmin";
 
 export async function POST(request: NextRequest) {
   try {
+    await main();
     const body = await request.json();
 
     const validate = loginValidationSchema.safeParse(body);
@@ -60,7 +62,7 @@ export async function POST(request: NextRequest) {
     response.cookies.set("auth-token", token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      sameSite: "none", // allow cross-site cookie when frontend/backend are on different ports/domains
       maxAge: 7 * 24 * 60 * 60,
       path: "/",
     });

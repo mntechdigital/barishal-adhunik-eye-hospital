@@ -1,49 +1,58 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import * as z from "zod"
-import { Button } from "@/components/ui/button"
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
+import { useTransition } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { login } from "@/services/auth.service";
+import { toast } from "sonner";
+import z from "zod/v3";
+import { useRouter } from "next/navigation";
 
 const loginSchema = z.object({
-  email: z.string().min(1, "Email is required").email("Please enter a valid email address"),
-  password: z.string().min(1, "Password is required").min(6, "Password must be at least 6 characters"),
-})
+  email: z
+    .string()
+    .min(1, "Email is required")
+    .email("Please enter a valid email address"),
+  password: z
+    .string()
+    .min(1, "Password is required")
+    .min(6, "Password must be at least 6 characters"),
+});
 
-type LoginFormValues = z.infer<typeof loginSchema>
+type LoginFormValues = z.infer<typeof loginSchema>;
 
 export function LoginForm() {
-  const [isLoading, setIsLoading] = useState(false)
-
+  const navigate = useRouter();
+  const [isPending, startTransition] = useTransition();
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(loginSchema),
     defaultValues: {
       email: "",
       password: "",
     },
-  })
+  });
 
   async function onSubmit(values: LoginFormValues) {
-    setIsLoading(true)
-    try {
-      console.log("Form submitted with values:", {
-        email: values.email,
-        password: values.password,
-      })
-      console.log("Login attempt for email:", values.email)
+    startTransition(async () => {
+      const res = await login(values);
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      console.log("Login successful for:", values.email)
-    } catch (error) {
-      console.error("Login error:", error)
-    } finally {
-      setIsLoading(false)
-    }
+      if (res?.success) {
+        toast.success(res?.message || "Login successful");
+        navigate.push("/dashboard");
+      } else {
+        toast.error(res?.message || "Login failed");
+      }
+    });
   }
 
   return (
@@ -59,7 +68,7 @@ export function LoginForm() {
                 <Input
                   placeholder="admin@example.com"
                   type="email"
-                  disabled={isLoading}
+                  disabled={isPending}
                   className="bg-card border-border text-foreground placeholder:text-muted-foreground"
                   {...field}
                 />
@@ -79,7 +88,7 @@ export function LoginForm() {
                 <Input
                   placeholder="••••••••"
                   type="password"
-                  disabled={isLoading}
+                  disabled={isPending}
                   className="bg-card border-border text-foreground placeholder:text-muted-foreground"
                   {...field}
                 />
@@ -89,15 +98,14 @@ export function LoginForm() {
           )}
         />
 
-        {/* Submit Button */}
         <Button
           type="submit"
-          disabled={isLoading}
+          disabled={isPending}
           className="w-full bg-primary hover:bg-gray-800 cursor-pointer text-primary-foreground font-semibold py-2 rounded-lg transition-colors"
         >
-          {isLoading ? "Signing in..." : "Sign In"}
+          {isPending ? "Signing in..." : "Sign In"}
         </Button>
       </form>
     </Form>
-  )
+  );
 }
