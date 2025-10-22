@@ -6,7 +6,7 @@ const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
   return (
-     <footer className="bg-brand pt-20 pb-4">
+     <footer className="bg-brand pt-20 pb-4 mt-10">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="bg-[#1F242C] rounded-2xl p-12 mb-8">

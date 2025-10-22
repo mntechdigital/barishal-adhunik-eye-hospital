@@ -4,10 +4,12 @@ import breath from "@/assets/breath.png";
 import imgOne from "@/assets/about-img-one.png";
 import imgTwo from "@/assets/about-img-two.png";
 import Authority from "./_components/Authority";
+import CommonSection from "@/components/shared/CommonSection";
 
 const About = () => {
   return (
-    <div className=" py-10">
+    <div className="">
+      <CommonSection title="আমাদের সম্পর্কে" />
       <div className="flex justify-center items-center gap-2 mt-24 ">
         <Image src={breath} alt="breath" width={20} height={50} />
         <h1 className="font-bangla">আমাদের সম্পর্কে</h1>

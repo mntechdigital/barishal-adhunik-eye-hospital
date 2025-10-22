@@ -1,8 +1,10 @@
+import CommonSection from "@/components/shared/CommonSection";
 import React from "react";
 
 const Service = () => {
   return (
     <main className="min-h-screen bg-white">
+       <CommonSection title="যোগাযোগ"/>
       {/* Header */}
       <div className="">
         <div className="max-w-6xl mx-auto px-4 py-6 md:py-12 text-center">
