@@ -10,7 +10,7 @@ const CommonSection = ({ title }: { title: string }) => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        height: "400px",
+        height: "250px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

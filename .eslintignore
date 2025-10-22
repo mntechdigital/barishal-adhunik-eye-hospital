@@ -1,0 +1,19 @@
+# Ignore Next.js build output
+.next/
+out/
+build/
+
+# Ignore Prisma generated files
+src/generated/
+src/generated/**/*
+prisma/generated/
+prisma/generated/**/*
+**/wasm-compiler-edge.js
+**/runtime/
+**/runtime/**/*
+
+# Ignore Prisma client build artifacts
+node_modules/
+
+# Ignore Next.js type definitions
+next-env.d.ts

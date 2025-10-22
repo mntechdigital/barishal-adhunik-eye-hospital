@@ -90,10 +90,10 @@ const OurRelationSection = () => {
                   ))}
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center mt-5">
+              <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 items-center mt-5 mb-5 lg:mb-0">
                 <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2 lg:mt-0">
                   <Link href="/contact" className="grid grid-cols-3">
-                    <h3 className=" text-gray-100 col-span-2 py-2 px-3">
+                    <h3 className=" text-gray-100 text-xs lg:text-base col-span-2 py-2 px-3">
                       More About Us
                     </h3>
                     <span className="col-span-1 bg-white m-[2px] rounded-sm flex items-center justify-center">
