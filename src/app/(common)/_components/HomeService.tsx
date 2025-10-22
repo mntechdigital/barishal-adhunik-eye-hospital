@@ -1,57 +1,94 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Slider from "./Slider";
 import Image from "next/image";
 import breath from "@/assets/breathW.png";
+import slidOne from "@/assets/slidImage/slidOne.png";
+import slidTwo from "@/assets/slidImage/slidTwo.png";
+import slidThree from "@/assets/slidImage/slidThree.png";
+import slidFour from "@/assets/slidImage/slidFour.png";
+import slidFive from "@/assets/slidImage/slidFive.png";
 const HomeService = () => {
+  const [visibleCount, setVisibleCount] = useState<number>(5);
+
+  const calculateVisibleCount = (width: number) => {
+    // small devices
+    if (width < 640) return 2;
+    // medium devices
+    if (width < 1024) return 4;
+    // large and up
+    return 5;
+  };
+
+  useEffect(() => {
+    const update = () =>
+      setVisibleCount(calculateVisibleCount(window.innerWidth));
+
+    // Initialize
+    update();
+
+    // Debounced resize handler
+    let timeout: number | undefined;
+    const handler = () => {
+      if (timeout) window.clearTimeout(timeout);
+      timeout = window.setTimeout(update, 150);
+    };
+
+    window.addEventListener("resize", handler);
+    return () => {
+      window.removeEventListener("resize", handler);
+      if (timeout) window.clearTimeout(timeout);
+    };
+  }, []);
+
   const slides = [
     {
       id: 1,
-      image:
-        "https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
-        description:"চোখ থেকে পানি পড়া ও নেত্রনালী DCR & DCT টিউব এর মাধ্যমে অপারেশন করা হয়. "
+      image: slidOne,
+
+      description:
+        "ডিজিটাল কম্পিউটার ও স্লীট ল্যাম্পের মাধ্যমে চক্ষু ও মাথা ব্যাথা পরীক্ষা করা হয়.",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000",
-      description:"অত্যাধুনিক ডিজিটাল মাইক্রোস্কোপর মাধ্যমে,  ছানি ও ফ্যাকো অপারেশন করা হয়.।"
+      image: slidTwo,
+      description:
+        "অত্যাধুনিক ডিজিটাল মাইক্রোস্কোপর মাধ্যমে,  ছানি ও ফ্যাকো অপারেশন করা হয়.।",
     },
     {
       id: 3,
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&psig=AOvVaw2tkuPtcyfSLk3sWia01fWM&ust=1761198022043000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCUnYaMt5ADFQAAAAAdAAAAABAE",
-      description:"BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।"
+      image: slidThree,
+      description:
+        "চোখ থেকে পানি পড়া ও নেত্রনালী DCR & DCT টিউব এর মাধ্যমে অপারেশন করা হয়. ",
     },
     {
       id: 4,
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&psig=AOvVaw2tkuPtcyfSLk3sWia01fWM&ust=1761198022043000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCUnYaMt5ADFQAAAAAdAAAAABAE",
-      description:"BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।"
+      image: slidFour,
+      description: "BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।",
     },
     {
       id: 5,
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&psig=AOvVaw2tkuPtcyfSLk3sWia01fWM&ust=1761198022043000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCUnYaMt5ADFQAAAAAdAAAAABAE",
-      description:"BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।"
+      image: slidFive,
+      description: "এছাড়াও চোখের যাবতীয় অপারেশন করা হয়।",
     },
-    {
-      id: 6,
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&psig=AOvVaw2tkuPtcyfSLk3sWia01fWM&ust=1761198022043000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCUnYaMt5ADFQAAAAAdAAAAABAE",
-      description:"BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।"
-    },
-    {
-      id: 7,
-      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Ffree-images&psig=AOvVaw2tkuPtcyfSLk3sWia01fWM&ust=1761198022043000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCNCUnYaMt5ADFQAAAAAdAAAAABAE",
-      description:"BCL এর মাধ্যমে চোখের আলসারের চিকিৎসা  করা হয়।"
-    },
-   
   ];
 
   return (
     <main className=" w-full bg-brand mt-20 py-14">
-     <div className="flex justify-center items-center gap-2 ">
+      <div className="flex justify-center items-center gap-2 ">
         <Image src={breath} alt="breath" width={20} height={50} />
         <h1 className="font-bangla text-lg text-white">আমাদের সেবা সমূহ</h1>
         <Image src={breath} alt="breath" width={20} height={50} />
       </div>
-      <h1 className="font-bangla font-bold text-xl md:text-3xl text-center pt-2 pb-8 text-white">আমাদের বরিশাল আধুনিক চক্ষু হাসপাতালের পরিষেবা</h1>
-        <Slider slides={slides} autoPlay={true} autoPlayInterval={5000} visibleCount={5} />
+      <h1 className="font-bangla font-bold text-xl md:text-3xl text-center pt-2 pb-8 text-white">
+        আমাদের বরিশাল আধুনিক চক্ষু হাসপাতালের পরিষেবা
+      </h1>
+      <Slider
+        slides={slides}
+        autoPlay={true}
+        autoPlayInterval={5000}
+        visibleCount={visibleCount}
+      />
     </main>
   );
 };
