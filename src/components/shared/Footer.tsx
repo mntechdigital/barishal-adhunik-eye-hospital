@@ -10,14 +10,14 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="bg-[#1F242C] rounded-2xl p-12 mb-8">
-          <div className="grid grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Left Section - Logo & Tagline */}
             <div className="col-span-1">
               <Link href={"/"} className="flex items-center gap-3 mb-6">
                 <Image src={logo} alt="logo" className='w-44'/>
               </Link>
               <p className="text-gray-300 text-sm leading-relaxed mb-6 font-bangla">
-                আপনার আপনার আমাদের সপ্ন আপনার চোখের সঠিক যত্ন নিন
+                চোখ আপনার অমূল্য সম্পদ আপনার চোখের সঠিক যত্ন নিন
               </p>
               <div className="flex items-center gap-2">
                 <span className="text-gray-400 text-sm font-bangla">Follow Us :</span>
