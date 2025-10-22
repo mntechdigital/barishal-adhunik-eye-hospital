@@ -5,7 +5,7 @@ import CommonSection from '@/components/shared/CommonSection'
 const Facilitypage = () => {
   return (
     <div>
-      <CommonSection title="যোগাযোগ"/>
+      <CommonSection title="চিকিৎসা কার্ডের সুবিধা সমূহ"/>
       <TermsList/>
     </div>
   )
