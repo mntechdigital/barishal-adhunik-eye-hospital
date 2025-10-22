@@ -41,7 +41,7 @@ const Navbar = () => {
               <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
                 হোম
               </Link>
-              <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
+              <Link href="/about" className="hover:text-brand transition duration-200 font-bangla">
                 আমাদের সম্পর্কে
               </Link>
               <Link href="/our-services" className="hover:text-brand transition duration-200 font-bangla">
