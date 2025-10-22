@@ -36,10 +36,10 @@ const Navbar = () => {
               <Link href="/about" className="hover:text-brand transition duration-200 font-bangla">
                 আমাদের সম্পর্কে
               </Link>
-              <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
+              <Link href="/service" className="hover:text-brand transition duration-200 font-bangla">
                 আমাদের সেবা
               </Link>
-              <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
+              <Link href="/facility" className="hover:text-brand transition duration-200 font-bangla">
                 সুবিধা সমূহ
               </Link>
             </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
 
           {/* Contact Button */}
           <div className="hidden lg:block bg-brand rounded-sm hover:bg-brand/90 transition duration-200">
-            <Link href="/contact" className="grid grid-cols-3">
+            <Link href="/service" className="grid grid-cols-3">
               <h3 className="font-bangla text-gray-100 col-span-2 py-2 px-3">
                 যোগাযোগ
               </h3>
