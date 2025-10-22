@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist_Mono, Poppins, Tiro_Bangla } from "next/font/google";
+import { Poppins, Tiro_Bangla } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${poppins.variable} ${tiroBangla.variable} antialiased`}
       >
         {children}
+        <Toaster />
       </body>
     </html>
   );
