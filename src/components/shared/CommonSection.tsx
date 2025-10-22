@@ -8,9 +8,10 @@ const CommonSection = ({ title }: { title: string }) => {
       style={{
         backgroundImage: 'url("/commonheroimage.png")',
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "100% 0%",
         backgroundRepeat: "no-repeat",
-        height: "400px",
+        width: "100%",
+        height: "270px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
@@ -20,14 +21,14 @@ const CommonSection = ({ title }: { title: string }) => {
         backgroundColor: "rgba(0, 0, 0, 0.8)",
         backgroundBlendMode: "darken",
         position: "relative",
-        marginBottom: "60px",
+        marginBottom: "30px",
       }}
     >
       <p className="font-bangla text-white absolute right-4 top-1/2 -translate-y-1/2 rotate-[-90deg]">
         ২৪/৭ জরুরি পরিষেবা
       </p>
 
-      <h2 className="text-4xl font-bold mb-2 font-bangla">যোগাযোগ</h2>
+      <h2 className="text-4xl font-bold mb-2 font-bangla">{title}</h2>
       <div className="flex justify-center items-center gap-1">
         <Link href="/" className="font-bangla text-green-700">
           <span>হোম</span>
