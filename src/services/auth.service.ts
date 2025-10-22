@@ -30,7 +30,10 @@ export const login = async (payload: FieldValues) => {
     return data;
   } catch (error) {
     console.error("Error during login:", error);
-    process.exit(1);
+    return {
+      success: false,
+      message: "Internal server error",
+    };
   }
 };
 
@@ -52,4 +55,17 @@ export const loggedUser = async () => {
   }
 
   return decoded;
+};
+
+export const logoutUser = async () => {
+  const cookie = await cookies();
+  const accessToken = cookie.get("auth-token")?.value;
+  if (accessToken) {
+    cookie.set("auth-token", "", {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      maxAge: 0,
+    });
+  }
 };
