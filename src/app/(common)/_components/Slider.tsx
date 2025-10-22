@@ -67,7 +67,7 @@ const Slider = ({
   }, [currentSlide, slides, safeVisibleCount]);
 
   return (
-    <div className={`${!slides[0]?.description && "container"} mx-auto`}>
+    <div className={`${!slides[0]?.description ? "container" : "h-"} `}>
       {/* Slider Container */}
       <div className="relative w-full overflow-hidden rounded-lg">
         <div 

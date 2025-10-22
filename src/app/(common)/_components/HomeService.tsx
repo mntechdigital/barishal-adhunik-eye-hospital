@@ -47,10 +47,10 @@ const HomeService = () => {
     <main className=" w-full bg-brand mt-20 py-14">
      <div className="flex justify-center items-center gap-2 ">
         <Image src={breath} alt="breath" width={20} height={50} />
-        <h1 className="font-bangla text-lg text-white">আমাদের ক্যাম্পেইন</h1>
+        <h1 className="font-bangla text-lg text-white">আমাদের সেবা সমূহ</h1>
         <Image src={breath} alt="breath" width={20} height={50} />
       </div>
-      <h1 className="font-bangla font-bold text-xl md:text-3xl text-center pt-2 pb-8 text-white">বরিশাল মডার্ন চক্ষু হাসপাতালের আসন্ন ক্যাম্পিং ট্রিপ</h1>
+      <h1 className="font-bangla font-bold text-xl md:text-3xl text-center pt-2 pb-8 text-white">আমাদের বরিশাল আধুনিক চক্ষু হাসপাতালের পরিষেবা</h1>
         <Slider slides={slides} autoPlay={true} autoPlayInterval={5000} visibleCount={5} />
     </main>
   );

@@ -22,7 +22,7 @@ const Camping = () => {
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="pb-5 bg-white">
       <div className="max-w-6xl mx-auto">
     
         <div className="flex justify-center items-center gap-2 mt-24 ">
