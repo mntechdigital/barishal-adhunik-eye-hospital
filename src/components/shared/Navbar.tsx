@@ -1,9 +1,9 @@
-import React from "react";
 import TopNavbar from "./TopNavbar";
 import logo from "@/assets/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight, Menu, X } from "lucide-react";
+import { MoveRight, } from "lucide-react";
+import NavbarClient from "./NavbarClient";
 
 const Navbar = () => {
   return (
@@ -24,20 +24,12 @@ const Navbar = () => {
             </Link>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <input type="checkbox" id="menu-toggle" className="hidden peer" />
-          <label
-            htmlFor="menu-toggle"
-            className="lg:hidden cursor-pointer p-2 text-gray-100"
-          >
-            <Menu className="w-6 h-6" />
-          </label>
+          {/* Mobile Menu Toggle - Client Component */}
+          <NavbarClient />
 
-          {/* Navigation Links */}
-          <div className="w-full lg:w-auto lg:flex lg:items-center lg:gap-8
-                          absolute lg:static top-full left-0 bg-[#31363d] lg:bg-transparent
-                          max-h-0 lg:max-h-full overflow-hidden peer-checked:max-h-96 transition-all duration-300">
-            <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-8 text-gray-100 p-4 lg:p-0">
+          {/* Navigation Links for Desktop */}
+          <div className="hidden lg:flex lg:w-auto lg:items-center lg:gap-8">
+            <div className="flex lg:flex-row lg:items-center gap-8 text-gray-100">
               <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
                 হোম
               </Link>
@@ -54,7 +46,7 @@ const Navbar = () => {
           </div>
 
           {/* Contact Button */}
-          <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2 lg:mt-0">
+          <div className="hidden lg:block bg-brand rounded-sm hover:bg-brand/90 transition duration-200">
             <Link href="/contact" className="grid grid-cols-3">
               <h3 className="font-bangla text-gray-100 col-span-2 py-2 px-3">
                 যোগাযোগ

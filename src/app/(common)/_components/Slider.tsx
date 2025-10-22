@@ -7,6 +7,8 @@ interface SlideItem {
   id: number;
   image?: string;
   description?: string;
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 interface MedicalSliderProps {
@@ -44,7 +46,7 @@ const Slider = ({
 
   const goToSlide = (index: number) => {
     if (index === currentSlide) return;
-    
+
     setIsTransitioning(true);
     setCurrentSlide(index % slides.length);
   };
@@ -71,21 +73,21 @@ const Slider = ({
     <div className={`${!slides[0]?.description ? "container" : "h-"} `}>
       {/* Slider Container */}
       <div className="relative w-full overflow-hidden rounded-lg">
-        <div 
+        <div
           className={`flex transition-all duration-500 ease-in-out ${
             slides[0]?.description ? "gap-4" : "gap-2"
-          } ${
-            isTransitioning ? "transform transition-transform" : ""
-          }`}
+          } ${isTransitioning ? "transform transition-transform" : ""}`}
           style={{
-            transform: isTransitioning ? 'translateX(-5px)' : 'translateX(0)',
+            transform: isTransitioning ? "translateX(-5px)" : "translateX(0)",
           }}
         >
           {visibleSlides.map((slide, idx) => (
             <div
               key={`${slide.id}-${idx}`}
               className={`flex-1 min-w-0 rounded-lg transition-all duration-500 ease-in-out ${
-                isTransitioning ? 'opacity-90 scale-95' : 'opacity-100 scale-100'
+                isTransitioning
+                  ? "opacity-90 scale-95"
+                  : "opacity-100 scale-100"
               }`}
             >
               <div
@@ -96,13 +98,13 @@ const Slider = ({
                 <Image
                   src={slide?.image || ""}
                   alt={`slide-${slide.id}`}
-                  width={400}
-                  height={200}
-                  className={`w-full h-[10rem] object-cover mb-4 transition-all duration-300 ${
-                    !slide?.description ? "rounded-md" : "rounded-t-md"
-                  } ${
-                    isTransitioning ? 'brightness-95' : 'brightness-100'
-                  }`}
+                  width={1000}
+                  height={1000}
+                  className={`w-full  object-cover mb-4 transition-all duration-300 ${
+                    !slide?.description
+                      ? "rounded-md h-[14rem]"
+                      : "rounded-t-md h-[10rem]"
+                  } ${isTransitioning ? "brightness-95" : "brightness-100"}`}
                 />
                 {slide?.description && (
                   <div className="min-h-28">
