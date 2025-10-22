@@ -1,5 +1,7 @@
 import CommonSection from "@/components/shared/CommonSection";
+import Image from "next/image";
 import React from "react";
+import avatar from '@/assets/avatar.png'
 
 const Service = () => {
   return (
@@ -135,10 +137,9 @@ const Service = () => {
             </p>
           </div>
         </div>
+        <Image src={avatar} alt="" width={1000} height={100} className="w-[70%]"/>
       </div>
 
-      {/* Footer Spacing */}
-      <div className="h-12"></div>
     </main>
   );
 };
