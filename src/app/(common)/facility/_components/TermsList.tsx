@@ -13,7 +13,7 @@ export default function TermsList() {
   return (
     <div className="min-h-screen bg-white p-6">
       <div className="max-w-3xl mx-auto space-y-0">
-        <h2 className="text-center bg-green-700 text-white border rounded-md p-3 mb-8">চিকিৎসা কার্ডের সুবিধা সমূহ</h2>
+        <h2 className="text-center bg-green-700 text-white border rounded-md p-3 mb-8 font-bangla">চিকিৎসা কার্ডের সুবিধা সমূহ</h2>
         {terms.map((term, index) => (
           <div
             key={index}
@@ -22,7 +22,7 @@ export default function TermsList() {
             <div className="flex-shrink-0 mt-0.5">
               <CircleDot  className="w-6 h-6 text-green-600 flex-shrink-0" />
             </div>
-            <p className="text-gray-800 text-sm leading-relaxed font-medium">{term}</p>
+            <p className="text-gray-800 text-sm leading-relaxed font-medium font-bangla">{term}</p>
           </div>
         ))}
       </div>
