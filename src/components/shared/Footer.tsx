@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="bg-[#1F242C] rounded-2xl p-12 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Left Section - Logo & Tagline */}
             <div className="col-span-1">
               <Link href={"/"} className="flex items-center gap-3 mb-6">
@@ -34,54 +34,29 @@ const Footer = () => {
               <h4 className="text-white font-bold text-sm mb-1 pb-2 border-b border-brand font-bangla">সফট লিংক</h4>
               <ul className="space-y-2 mt-4">
                 <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
-                    যোগ
-                  </a>
+                  <Link href="/" className="text-gray-300 text-sm hover:text-white transition font-bangla">
+                    হোম
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
+                  <Link href={"/about"} className="text-gray-300 text-sm hover:text-white transition font-bangla">
                     আমাদের সম্পর্কে
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
+                  <Link href="/our-services" className="text-gray-300 text-sm hover:text-white transition font-bangla">
                     আমাদের সেবা
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
+                  <Link href="/service" className="text-gray-300 text-sm hover:text-white transition font-bangla">
                     যোগাযোগ
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
 
-            {/* Middle Right Section */}
-            <div className="col-span-1">
-              <h4 className="text-white font-bold text-sm mb-1 pb-2 border-b border-brand font-bangla">যোগাযোগ করুন</h4>
-              <ul className="space-y-2 mt-4">
-                <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
-                    যোগ
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
-                    আমাদের সম্পর্কে
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
-                    আমাদের সেবা
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-300 text-sm hover:text-white transition font-bangla">
-                    যোগাযোগ
-                  </a>
-                </li>
-              </ul>
-            </div>
+            
 
             {/* Right Section - Contact Info */}
             <div className="col-span-1">
