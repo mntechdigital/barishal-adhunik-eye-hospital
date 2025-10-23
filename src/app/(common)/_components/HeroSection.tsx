@@ -1,10 +1,21 @@
 import hero_image from "@/assets/hero.jpg";
+import eye from "@/assets/eye.svg";
 import { Activity, CircleDot, MoveRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <div className="relative w-full h-screen min-h-[600px]">
+      <div className="absolute z-[999] right-0 bottom-30 lg:block hidden">
+        <Image
+          src={eye}
+          alt="eye"
+          width={1000}
+          height={1000}
+          className="w-64"
+        />
+      </div>
       <div
         style={{
           backgroundImage: `url(${hero_image.src})`,
