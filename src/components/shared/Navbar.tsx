@@ -1,8 +1,8 @@
 import TopNavbar from "./TopNavbar";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { MoveRight, } from "lucide-react";
+import { MoveRight } from "lucide-react";
 import NavbarClient from "./NavbarClient";
 
 const Navbar = () => {
@@ -13,14 +13,23 @@ const Navbar = () => {
         <div className="container mx-auto flex flex-wrap items-center justify-between relative">
           {/* Logo */}
           <div>
-            <Link href="/">
+            <Link href="/" className="flex items-center gap-2">
               <Image
                 src={logo}
                 alt="logo"
                 width={1000}
                 height={1000}
-                className="w-48"
+                className="w-12"
               />
+              <div>
+                <h1
+                  className="font-black text-white text-shadow-lg
+"
+                >
+                  <span className="text-brand">Barishal</span> Adhunik <br />{" "}
+                  Eye Hospital
+                </h1>
+              </div>
             </Link>
           </div>
 
@@ -30,16 +39,28 @@ const Navbar = () => {
           {/* Navigation Links for Desktop */}
           <div className="hidden lg:flex lg:w-auto lg:items-center lg:gap-8">
             <div className="flex lg:flex-row lg:items-center gap-8 text-gray-100">
-              <Link href="/" className="hover:text-brand transition duration-200 font-bangla">
+              <Link
+                href="/"
+                className="hover:text-brand transition duration-200 font-bangla"
+              >
                 হোম
               </Link>
-              <Link href="/about" className="hover:text-brand transition duration-200 font-bangla">
+              <Link
+                href="/about"
+                className="hover:text-brand transition duration-200 font-bangla"
+              >
                 আমাদের সম্পর্কে
               </Link>
-              <Link href="/our-services" className="hover:text-brand transition duration-200 font-bangla">
+              <Link
+                href="/our-services"
+                className="hover:text-brand transition duration-200 font-bangla"
+              >
                 আমাদের সেবা
               </Link>
-              <Link href="/facility" className="hover:text-brand transition duration-200 font-bangla">
+              <Link
+                href="/facility"
+                className="hover:text-brand transition duration-200 font-bangla"
+              >
                 সুবিধা সমূহ
               </Link>
             </div>
