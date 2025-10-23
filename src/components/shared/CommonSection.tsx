@@ -24,11 +24,11 @@ const CommonSection = ({ title }: { title: string }) => {
         marginBottom: "30px",
       }}
     >
-      <p className="font-bangla text-white absolute right-4 top-1/2 -translate-y-1/2 rotate-[-90deg]">
+      <p className="font-bangla text-white absolute right-1 md:right-4 top-1/2 -translate-y-1/2 rotate-[-90deg]">
         ২৪/৭ জরুরি পরিষেবা
       </p>
 
-      <h2 className="text-4xl font-bold mb-2 font-bangla">{title}</h2>
+      <h2 className="text-xl md:text-4xl font-bold mb-2 font-bangla">{title}</h2>
       <div className="flex justify-center items-center gap-1">
         <Link href="/" className="font-bangla text-green-700">
           <span>হোম</span>
@@ -38,7 +38,7 @@ const CommonSection = ({ title }: { title: string }) => {
         </span>
         <span className="font-bangla">{title}</span>
       </div>
-      <div className="flex items-center justify-between min-w-xl md:min-w-4xl absolute bottom-[-20px] left-1/2 -translate-x-1/2">
+      <div className="flex items-center gap-10 justify-center md:justify-between w-full md:w-4xl absolute bottom-[-20px] left-1/2 -translate-x-1/2">
         <a
           href="https://facebook.com"
           target="_blank"
