@@ -1,5 +1,5 @@
 import hero_image from "@/assets/hero.jpg";
-import eye from "@/assets/eyee.png";
+import eye from "@/assets/eye.png";
 import { Activity, CircleDot, MoveRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
