@@ -5,10 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const HeroSection = () => {
-  
+
   return (
-    <div className="relative w-full h-screen min-h-[600px]">
-      <div className="absolute z-50 -left-14 bottom-40 lg:block hidden ">
+    <div className="relative w-full h-screen min-h-[600px] overflow-hidden">
+      <div className="absolute z-50 -left-14 bottom-40 lg:block hidden overflow-hidden ">
         <Image
           src={eye}
           alt="eye"
@@ -17,7 +17,7 @@ const HeroSection = () => {
           className="w-52"
         />
       </div>
-      <div className="absolute z-50 -right-10 top-30 lg:block hidden ">
+      <div className="absolute z-50 -right-10 top-30 lg:block hidden overflow-hidden">
         <Image
           src={eye}
           alt="eye"
