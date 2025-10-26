@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const HeroSection = () => {
+  
   return (
     <div className="relative w-full h-screen min-h-[600px]">
       <div className="absolute z-50 -left-14 bottom-40 lg:block hidden ">
