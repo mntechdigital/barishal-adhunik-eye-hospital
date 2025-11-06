@@ -19,23 +19,41 @@ const products = [
   "Excellecce(India)",
 ];
 const otlist = [
-  "DCR surgery (cosmetic with tube intubations)",
-  "DCR surgery (tube intubation)",
-  "DCT surgery (cosmetic)",
-  "DCT surgery ",
-  "Pterygium surgery (auto-graft)",
-  "Pterygium surgery (excision)",
-  "Calazian",
+  "PHACO Surgery (ছানি অপারেশন)",
+  "DCR surgery (নেত্রনালী, কসমেটিক্স)",
+  "DCR surgery (নেত্রনালী নরমাল)",
+  "DCT (নেত্রনালী)",
+  "Pterygium surgery (চোখের মাংস বৃদ্ধি) গ্রাফটিং",
+  "Pterygium surgery (চোখের মাংস বৃদ্ধি) সিম্পল",
+  "ক্যালাজিয়ান",
+  "Foreign Body Remove"
 ];
 
 export default function IOLProductsList() {
   return (
     <div className="">
-      <h2 className="text-center font-semibold text-5xl text-[#2B2B2B] font-bangla my-20">
+      <h2 className="text-center font-semibold text-5xl text-[#2B2B2B] font-bangla mb-10 mt-20">
         ফ্যাকো, ছানি ও অন্যান্য অপারেশন
       </h2>
       <div className="w-full bg-[#F6F9FF] py-10 md:py-15">
         <div className="max-w-3xl mx-auto space-y-4 px-4">
+          <div className="">
+            <h2 className="text-center bg-green-700 text-white border rounded-md p-3 mb-8 ">
+              OT Chart
+            </h2>
+            {otlist.map((product, index) => (
+              <div
+                key={index}
+                className="flex items-start mb-4 gap-4 p-4 border border-border rounded-lg bg-card hover:bg-muted/50 transition-colors duration-200"
+              >
+                <CircleDot className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
+                <p className="text-foreground font-medium leading-relaxed">
+                  {product}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <div className="mb-10">
             <h2 className="text-center bg-green-700 text-white border rounded-md p-3 mb-8 ">
               Type Of Lens
@@ -52,25 +70,8 @@ export default function IOLProductsList() {
               </div>
             ))}
           </div>
-          <div className="">
-            <h2 className="text-center bg-green-700 text-white border rounded-md p-3 mb-8 ">
-              Others OT Chart
-            </h2>
-            {otlist.map((product, index) => (
-              <div
-                key={index}
-                className="flex items-start mb-4 gap-4 p-4 border border-border rounded-lg bg-card hover:bg-muted/50 transition-colors duration-200"
-              >
-                <CircleDot className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
-                <p className="text-foreground font-medium leading-relaxed">
-                  {product}
-                </p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>
   );
-  
 }

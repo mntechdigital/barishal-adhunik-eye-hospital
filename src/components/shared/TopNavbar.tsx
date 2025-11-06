@@ -16,7 +16,7 @@ const TopNavbar = async () => {
         <div className="flex flex-wrap md:flex-row justify-center items-center gap-3 md:gap-8 py-1 px-6 text-[13px] ">
           <div className="flex items-center gap-2">
             <Phone className="w-4 h-4" />
-            <span>01708-445363</span>
+            <span>০১৭০৮-৪৪৫৩৬৩</span>
           </div>
 
           <div className="w-[1px] h-4 bg-white opacity-50"></div>
@@ -30,7 +30,7 @@ const TopNavbar = async () => {
 
           <div className="flex items-center gap-2">
             <Clock className="w-4 h-4" />
-            <span>Always Open</span>
+            <span className="font-bangla">২৪/৭ খোলা</span>
           </div>
 
           <div className="w-[1px] h-4 bg-white opacity-50"></div>
@@ -38,7 +38,7 @@ const TopNavbar = async () => {
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4" />
             <span className="font-bangla">
-              ১ নং C & B পুল, C & B রোড, বরিশাল, বাংলাদেশ
+              ১ নং সি অ্যান্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
             </span>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Service = () => {
       <div className="">
         <div className="max-w-6xl mx-auto px-4 py-6 md:py-12 text-center">
           <h1 className=" text-xl md:text-4xl font-bold font-bangla text-gray-900 tracking-tight">
-            বরিশাল আধুনিক ছুটি হাসপাতাল
+            বরিশাল আধুনিক চক্ষু হাসপাতাল
           </h1>
         </div>
       </div>
@@ -22,16 +22,16 @@ const Service = () => {
           {/* Phone Card */}
           <div className="border  border-gray-200 p-6 rounded-md shadow-md hover:shadow-sm transition-shadow">
             <h3 className="text-lg font-light text-gray-900 mb-2 font-bangla">
-              চলো কথা বলি
+              হটলাইন
             </h3>
             <hr className="text-gray-50 " />
             <div className="flex justify-between items-center h-full">
               <div className="space-y-2 ">
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  ফোন : (+88) 1708-445363
+                  ফোন : ০১৭০৮-৪৪৫৩৬৩
                 </p>
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  ফোন : (+88) 1718-175609
+                  ফোন : ০১৭১৮-১৭৫৬০৯
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
@@ -49,13 +49,13 @@ const Service = () => {
           {/* Email Card */}
           <div className="border  border-gray-200 p-6 rounded-md shadow-md hover:shadow-sm transition-shadow">
             <h3 className="text-lg font-light text-gray-900 mb-2 font-bangla">
-              ইমেল সমাধা
+              ইমেইল
             </h3>
             <hr className="text-gray-50 " />
             <div className="flex justify-between items-center h-full">
               <div className="space-y-2 ">
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  ইমেল : info.bosh@gmail.com
+                  ইমেইল : info.baeh@gmail.com
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
@@ -76,7 +76,7 @@ const Service = () => {
             <div className="flex justify-between items-center h-full">
               <div className="space-y-2 ">
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  1 No. C & B Pool, C & B Road, Barishal, Barishal, Bangladesh
+                  ১ নং সি অ্যান্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
@@ -117,23 +117,22 @@ const Service = () => {
               ভিশন সেন্টার (বৈঠাকাটা শাখা)
             </h4>
             <p className="text-sm text-gray-700 leading-relaxed font-bangla font-semibold">
-              <span className="text-brand">অবস্থান:</span> ঠেটাকাঠি ডাকার, কুলেবা দোকান বাজা লাইনারিয়ার, লোলা
-              সিকন্দারপুর
+              <span className="text-brand">অবস্থান:</span>  বৈঠাকাটা বাজার, কলেজ রোড।থানা :নাজিরপুর, জেলা: পিরোজপুর
             </p>
           </div>
 
           {/* Right Info */}
           <div className="border border-gray-200 p-6 rounded-md shadow-md">
             <h3 className="text-lg font-light text-grey-700 mb-3 font-bangla">
-              বরিশাল আধুনিক ছুটি হাসপাতাল
+              বরিশাল আধুনিক চক্ষু হাসপাতাল 
             </h3>
             <h4 className="text-base font-light text-brand mb-4 font-bangla">
-              ভিজন সেক্টর (মেহেরাজিয়া শাখা)
+             ভিশন সেন্টার (মঠবাড়িয়া শাখা)
             </h4>
             <p className="text-sm text-gray-700 leading-relaxed font-bangla font-semibold">
-              <span className="text-brand">অবস্থান:</span> তুষখালী রোড,মঠবাড়িয়া পৌরসভা ৫ নং ওয়ার্ড  পিরোজপুর বাস স্ট্যান্ড               
+              <span className="text-brand">অবস্থান:</span>তুষখালী রোড,মঠবাড়িয়া পৌরসভা ৫ নং ওয়ার্ড  পিরোজপুর বাস স্ট্যান্ড               
                  সংলগ্ন, ওয়ালটন প্লাজার পাশে। 
-                 থানা: মঠবাড়িয়া, জেলা পিরোজপুর
+                 থানা: মঠবাড়িয়া, জেলা পিরোজপুর।
             </p>
           </div>
         </div>

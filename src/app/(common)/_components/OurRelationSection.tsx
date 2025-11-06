@@ -40,16 +40,13 @@ const OurRelationSection = () => {
           <div className="flex items-center gap-1">
             <Activity className="w-4 h-4 text-green-500" />
             <h3 className="font-bangla text-sm text-green-500">
-              আমাদের সম্পর্কে
+              আমাদের সেবা সমূহ
             </h3>
             <Activity className="w-4 h-4 text-green-500" />
           </div>
 
-          <h1 className="font-bangla text-4xl my-5">
-            আমরা আপনার{" "}
-            <span className="font-bold text-brand">
-              বরিশাল আধুনিক চক্ষু হাসপাতালের যত্ন নিচ্ছি।
-            </span>
+          <h1 className="font-bangla text-4xl my-5 text-brand pr-5">
+            বরিশাল আধুনিক চক্ষু হাসপাতাল আপনার চোখের যত্ন নিচ্ছে
           </h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
@@ -92,9 +89,9 @@ const OurRelationSection = () => {
 
               <div className="grid grid-cols-2 lg:grid-cols-2 gap-3 items-center mt-5 mb-5 lg:mb-0">
                 <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2 lg:mt-0">
-                  <Link href="/contact" className="grid grid-cols-3">
-                    <h3 className=" text-gray-100 text-xs lg:text-base col-span-2 py-2 px-3">
-                      More About Us
+                  <Link href="/facility" className="grid grid-cols-3">
+                    <h3 className=" text-gray-100 text-xs lg:text-xl col-span-2 py-2 px-3 font-bangla">
+                      আরো জানতে
                     </h3>
                     <span className="col-span-1 bg-white m-[2px] rounded-sm flex items-center justify-center">
                       <MoveRight className="text-brand w-6 h-6 p-[2px]" />
@@ -105,9 +102,9 @@ const OurRelationSection = () => {
                   <PhoneCall className="w-12 h-12 text-white bg-brand p-2 rounded-full" />
                   <div className="flex flex-col">
                     <h2 className="font-semibold text-brand font-bangla">
-                      জরুরি অবস্থ কল
+                      জরুরী সেবায়
                     </h2>
-                    <h3>01708-445363</h3>
+                    <h3 className="font-bangla">০১৭০৮-৪৪৫৩৬৩</h3>
                   </div>
                 </div>
               </div>
