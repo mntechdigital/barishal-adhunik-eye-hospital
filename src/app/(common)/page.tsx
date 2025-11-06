@@ -5,12 +5,10 @@ import Camping from "./_components/Camping";
 import HomeService from "./_components/HomeService";
 
 const HomePage = () => {
-
-
   return (
     <>
       <HeroSection />
-       <Camping />
+      <Camping />
       <OurRelationSection />
       <HomeService />
       <EyeCareSection />

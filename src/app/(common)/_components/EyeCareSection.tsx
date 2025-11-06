@@ -1,7 +1,7 @@
 import { Activity, Phone } from "lucide-react";
 
 const eyeCares = [
-  "LOP",
+  "IOP",
   "RBS",
   "SPT",
   "Fluorescein Dye Test",
@@ -54,7 +54,7 @@ const EyeCareSection = () => {
       <div className="container bg-brand text-white px-20 py-1 flex items-center gap-2 rounded-md justify-center mt-20">
         <Phone className="h-6 w-6 inline-block border border-white p-[1px] rounded-xs" />
         <p className="font-bangla text-lg">
-          আপনার যদি কোন প্রশ্ন থাকে তাহলে আমাদের কল করুন (+880 1708-445363)
+          আপনার যদি কোন প্রশ্ন থাকে তাহলে আমাদের কল করুন (০১৭০৮-৪৪৫৩৬৩)
         </p>
       </div>
     </div>

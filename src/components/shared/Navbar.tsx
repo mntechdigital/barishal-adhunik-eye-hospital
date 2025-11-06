@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <div>
       <TopNavbar />
-      <div className="bg-[#31363d] py-3">
+      <div className="bg-[#bec4ce] py-3">
         <div className="container mx-auto flex flex-wrap items-center justify-between relative">
           {/* Logo */}
           <div>
@@ -23,11 +23,10 @@ const Navbar = () => {
               />
               <div>
                 <h1
-                  className="font-black text-white text-shadow-lg
+                  className="font-black text-brand text-shadow-lg text-2xl font-bangla
 "
                 >
-                  <span className="text-brand">Barishal</span> Adhunik <br />{" "}
-                  Eye Hospital
+                  বরিশাল আধুনিক চক্ষু হাসপাতাল
                 </h1>
               </div>
             </Link>
@@ -38,7 +37,7 @@ const Navbar = () => {
 
           {/* Navigation Links for Desktop */}
           <div className="hidden lg:flex lg:w-auto lg:items-center lg:gap-8">
-            <div className="flex lg:flex-row lg:items-center gap-8 text-gray-100">
+            <div className="flex lg:flex-row lg:items-center gap-8 text-gray-700 font-bold">
               <Link
                 href="/"
                 className="hover:text-brand transition duration-200 font-bangla"
@@ -46,22 +45,22 @@ const Navbar = () => {
                 হোম
               </Link>
               <Link
-                href="/about"
-                className="hover:text-brand transition duration-200 font-bangla"
-              >
-                আমাদের সম্পর্কে
-              </Link>
-              <Link
                 href="/our-services"
                 className="hover:text-brand transition duration-200 font-bangla"
               >
-                আমাদের সেবা
+                আমাদের সেবা সমূহ
               </Link>
               <Link
                 href="/facility"
                 className="hover:text-brand transition duration-200 font-bangla"
               >
                 সুবিধা সমূহ
+              </Link>
+              <Link
+                href="/about"
+                className="hover:text-brand transition duration-200 font-bangla"
+              >
+                আমাদের সম্পর্কে
               </Link>
             </div>
           </div>

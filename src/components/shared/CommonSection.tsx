@@ -28,7 +28,9 @@ const CommonSection = ({ title }: { title: string }) => {
         ২৪/৭ জরুরি পরিষেবা
       </p>
 
-      <h2 className="text-xl md:text-4xl font-bold mb-2 font-bangla">{title}</h2>
+      <h2 className="text-xl md:text-4xl font-bold mb-2 font-bangla">
+        {title}
+      </h2>
       <div className="flex justify-center items-center gap-1">
         <Link href="/" className="font-bangla text-green-700">
           <span>হোম</span>
@@ -40,7 +42,7 @@ const CommonSection = ({ title }: { title: string }) => {
       </div>
       <div className="flex items-center gap-10 justify-center md:justify-between w-full md:w-4xl absolute bottom-[-20px] left-1/2 -translate-x-1/2">
         <a
-          href="https://facebook.com"
+          href="https://www.facebook.com/share/17akTjXWhM/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-between gap-0 bg-green-600 hover:bg-green-700 transition-colors rounded-full px-7 pr-1 py-1 shadow-lg hover:shadow-xl border-2 border-white"
@@ -59,7 +61,7 @@ const CommonSection = ({ title }: { title: string }) => {
           <div className="flex items-center justify-center size-8 bg-white rounded-full mr-2">
             <Phone className="size-6 text-green-600" />
           </div>
-          <span className="text-white">01708-445363</span>
+          <span className="text-white">০১৭০৮-৪৪৫৩৬৩</span>
         </a>
       </div>
     </div>

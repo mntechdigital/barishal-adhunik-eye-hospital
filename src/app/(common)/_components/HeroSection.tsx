@@ -38,7 +38,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-3xl lg:text-5xl font-bangla font-black max-w-xl text-center leading-12 lg:leading-16">
-              আধুনিক চক্ষু চিকিৎসা সেবা প্রদানকারী একটি নির্ভরযোগ্য প্রতিষ্ঠান
+              আধুনিক চিকিৎসা সেবায় একটি নির্ভরযোগ্য প্রতিষ্ঠান{" "}
             </h1>
 
             <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2 lg:mt-0 mb-20">
@@ -60,7 +60,7 @@ const HeroSection = () => {
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white p-3 rounded-lg">
             <div className="bg-brand text-white px-3 py-1 rounded-md relative inline-block">
               <h3 className="font-bangla z-20 relative text-xs text-center lg:text-base lg:text-right">
-                চক্ষু চিকিৎসা সেবা ও ছানিরোগী বাছাই ক্যাম্প
+                ফ্রি চক্ষু চিকিৎসা সেবা ও ছানিরোগী বাছাই ক্যাম্প
               </h3>
               <div className="absolute w-5 h-5 bg-brand left-1/2 -translate-x-1/2 -bottom-[6px] rotate-45 z-10"></div>
             </div>
