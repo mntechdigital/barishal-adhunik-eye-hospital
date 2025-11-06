@@ -34,7 +34,7 @@ const HeroSection = () => {
 
                 <div className="inline-flex w-fit">
                   <Link
-                  href="/contact"
+                  href="/about"
                   className="relative group rounded-xl p-[2px] bg-gradient-to-r from-green-400 to-brand/90 shadow-md hover:shadow-2xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-300"
                   aria-label="আমাদের সম্পর্কে আরও জানুন"
                   >
@@ -80,9 +80,6 @@ const HeroSection = () => {
                           height={40}
                           className="animate-bounce"
                         />
-                        <p className="font-bangla text-white text-lg">
-                          চোখের যত্নে আমরা আপনার পাশে
-                        </p>
                       </div>
                     </div>
                   </div>
