@@ -14,7 +14,7 @@ const Camping = async () => {
           <Image src={breath} alt="breath" width={20} height={50} />
         </div>
         <h1 className="font-bangla font-bold text-xl md:text-3xl text-center pt-2 pb-8">
-          বরিশাল আধুনিক চক্ষু হাসপাতালের চলমান ক্যাম্পেইন সমূহ
+          বরিশাল আধুনিক চক্ষু হাসপাতাল এর চলমান ক্যাম্পেইন সমূহ
         </h1>
         <Slider
           slides={campaigns?.data || []}

@@ -148,7 +148,7 @@ const Footer = () => {
                     />
                   </svg>
                   <span className="text-gray-300 text-sm font-bangla">
-                    ১ নং সি অ্যান্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
+                    ১ নং সি এন্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
                   </span>
                 </div>
               </div>

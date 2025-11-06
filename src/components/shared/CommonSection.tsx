@@ -24,7 +24,7 @@ const CommonSection = ({ title }: { title: string }) => {
         marginBottom: "30px",
       }}
     >
-      <p className="font-bangla text-white absolute right-1 md:right-4 top-1/2 -translate-y-1/2 rotate-[-90deg]">
+      <p className="font-bangla text-white absolute -right-4 md:right-4 top-1/2 -translate-y-1/2 rotate-[-90deg]">
         ২৪/৭ জরুরি পরিষেবা
       </p>
 
