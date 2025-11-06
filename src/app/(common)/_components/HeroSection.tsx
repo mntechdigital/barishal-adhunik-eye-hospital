@@ -5,61 +5,89 @@ import Link from "next/link";
 import Image from "next/image";
 
 const HeroSection = () => {
-
   return (
     <div className="relative w-full h-screen min-h-[600px] overflow-hidden">
-      <div className="absolute z-50 -left-14 bottom-40 lg:block hidden overflow-hidden ">
-        <Image
-          src={eye}
-          alt="eye"
-          width={1000}
-          height={1000}
-          className="w-52"
-        />
-      </div>
-      <div className="absolute z-50 -right-10 top-30 lg:block hidden overflow-hidden">
-        <Image
-          src={eye}
-          alt="eye"
-          width={1000}
-          height={1000}
-          className="w-52"
-        />
-      </div>
       <div
         style={{
-          backgroundImage: `url(${hero_image.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           height: "90vh",
           width: "100%",
         }}
         className="absolute inset-0 hero_bottom_curve"
       >
-        <div className="absolute inset-0 w-full h-full bg-black opacity-80" />
+        <div className="absolute inset-0 w-full h-full bg-green-900 opacity-100" />
         <div className="relative h-full z-10 flex items-center justify-center text-gray-100">
-          <div className="flex flex-col items-center gap-5">
-            <div className="flex items-center gap-3">
-              <Activity className="w-4 h-4 text-green-500" />
-              <h3 className="font-bangla text-sm lg:text-base text-green-500">
-                বরিশাল আধুনিক চক্ষু হাসপাতাল
-              </h3>
-              <Activity className="w-4 h-4 text-green-500" />
-            </div>
+          <div className="container mx-auto px-4 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              {/* Left Side - Content */}
+              <div className="flex flex-col gap-6 text-left animate-fade-in-up">
+                <div className="flex items-center gap-3">
+                  <Activity className="w-4 h-4 text-green-500 animate-pulse" />
+                  <h3 className="font-bangla text-sm lg:text-base text-green-500">
+                    বরিশাল আধুনিক চক্ষু হাসপাতাল
+                  </h3>
+                  <Activity className="w-4 h-4 text-green-500 animate-pulse" />
+                </div>
 
-            <h1 className="text-3xl lg:text-5xl font-bangla font-black max-w-xl text-center leading-12 lg:leading-16">
-              আধুনিক চিকিৎসা সেবায় একটি নির্ভরযোগ্য প্রতিষ্ঠান{" "}
-            </h1>
+                <h1 className="text-3xl lg:text-5xl font-bangla font-black leading-tight lg:leading-snug">
+                  আধুনিক চিকিৎসা সেবায় একটি নির্ভরযোগ্য প্রতিষ্ঠান
+                </h1>
 
-            <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2 lg:mt-0 mb-20">
-              <Link href="/contact" className="grid grid-cols-3">
-                <h3 className="font-bangla text-gray-100 col-span-2 py-2 px-3">
-                  আমাদের সম্পর্কে আরও
-                </h3>
-                <span className="col-span-1 bg-white m-[2px] rounded-sm flex items-center justify-center">
-                  <MoveRight className="text-brand w-6 h-6 p-[2px]" />
-                </span>
-              </Link>
+                <div className="inline-flex w-fit">
+                  <Link
+                  href="/contact"
+                  className="relative group rounded-xl p-[2px] bg-gradient-to-r from-green-400 to-brand/90 shadow-md hover:shadow-2xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-300"
+                  aria-label="আমাদের সম্পর্কে আরও জানুন"
+                  >
+                  {/* Gradient border + glass inner */}
+                  <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-5 py-3 transform transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+                    <div className="flex flex-col">
+                    <span className="font-bangla text-white text-sm leading-tight">
+                      আমাদের সম্পর্কে আরও
+                    </span>
+                    <span className="text-[11px] text-white/70 mt-0.5">
+                      বিস্তারিত জানুন
+                    </span>
+                    </div>
+
+                    <span className="ml-3 flex items-center justify-center w-10 h-10 rounded-md bg-white/10 transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-6">
+                    <MoveRight className="w-5 h-5 text-white transition-transform" />
+                    </span>
+                  </div>
+
+                  {/* subtle shimmer on hover */}
+                  <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 bg-white/5 blur-md transition-opacity duration-500 group-hover:opacity-100 mix-blend-screen"></span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Side - Hero Image Card */}
+              <div className="lg:block animate-fade-in-right">
+                <div className="relative group">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-green-500 to-brand rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                  <div className="relative bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden shadow-2xl border border-white/20 transform transition-all duration-300 hover:scale-105">
+                    <Image
+                      src={hero_image}
+                      alt="Barishal Modern Eye Hospital"
+                      className="w-full h-[300px] object-cover rounded-lg"
+                      priority
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+                      <div className="flex items-center gap-2">
+                        <Image
+                          src={eye}
+                          alt="Eye"
+                          width={40}
+                          height={40}
+                          className="animate-bounce"
+                        />
+                        <p className="font-bangla text-white text-lg">
+                          চোখের যত্নে আমরা আপনার পাশে
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
