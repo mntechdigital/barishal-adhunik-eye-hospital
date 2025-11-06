@@ -76,7 +76,7 @@ const Service = () => {
             <div className="flex justify-between items-center h-full">
               <div className="space-y-2 ">
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  ১ নং সি অ্যান্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
+                  ১ নং সি এন্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ  
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
