@@ -13,7 +13,7 @@ export default function WhatsAppCall({ phoneNumber }: any) {
   return (
     <div
       onClick={handleWhatsAppRedirect}
-      className="inline-flex items-center justify-between gap-0 bg-green-600 hover:bg-green-700 transition-colors rounded-full px-3 pl-1 py-1 shadow-lg hover:shadow-xl border-2 border-white"
+      className="cursor-pointer inline-flex items-center justify-between gap-0 bg-green-600 hover:bg-green-700 transition-colors rounded-full px-3 pl-1 py-1 shadow-lg hover:shadow-xl border-2 border-white"
     >
       <div className="flex items-center justify-center size-8 bg-white rounded-full mr-2">
         <Phone className="size-6 text-green-600" />
