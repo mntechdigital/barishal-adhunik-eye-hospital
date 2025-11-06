@@ -17,9 +17,9 @@ const About = () => {
       </div>
       <div className="mt-5">
         <p className="w-full md:max-w-lg mx-auto text-center leading-10">
-          <span className="text-xl md:text-3xl pe-2">আমরা আপনার</span>
-          <span className="font-bold text-brand text-xl md:text-3xl ">
-            বরিশাল আধুনিক চক্ষু হাসপাতালের যত্ন নিচ্ছি।
+          <span className="text-xl md:text-3xl pe-2 font-bangla">বরিশাল আধুনিক</span>
+          <span className="font-bold font-bangla text-brand text-xl md:text-3xl ">
+            চক্ষু হাসপাতাল আপনার চোখের যত্ন নিচ্ছে
           </span>
         </p>
       </div>
@@ -30,13 +30,13 @@ const About = () => {
             “উজ্জ্বল দৃষ্টি, সুস্থ ভবিষ্যৎ”
           </span>
           বরিশাল আধুনিক চক্ষু হাসপাতাল দক্ষিণাঞ্চলের একটি শীর্ষস্থানীয় চক্ষু
-          চিকিৎসা প্রতিষ্ঠান। আমরা আধুনিক প্রযুক্তি, দক্ষ চিকিৎসক ও সেবাপ্রবণ
-          টিমের মাধ্যমে প্রতিদিন হাজারো মানুষের দৃষ্টিশক্তি রক্ষা ও পুনরুদ্ধারে
+          চিকিৎসা সেবা প্রদানকারী প্রতিষ্ঠান। আমরা আধুনিক প্রযুক্তি, দক্ষ চিকিৎসক ও সেবা দানকারী
+          টিমের মাধ্যমে প্রতিদিন হাজারো মানুষের দৃষ্টিশক্তি সংরক্ষণ ও পুনরুদ্ধারে
           কাজ করছি। আমাদের লক্ষ্য শুধু চিকিৎসা নয়—দৃষ্টি সংরক্ষণ, সচেতনতা বৃদ্ধি
           এবং মানবিক সেবার মাধ্যমে সমাজে আলো ছড়িয়ে দেওয়া।
         </p>
         <div className="col-span-1 flex justify-end items-center w-full">
-          <Image src={imgOne} alt="breath" className="w-full " />
+          <Image src={imgOne} alt="breath" className="w-full object-cover" />
         </div>
       </div>
 

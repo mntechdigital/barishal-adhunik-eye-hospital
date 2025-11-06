@@ -5,11 +5,11 @@ import ceo from "@/assets/authority/ceo.png";
 import admin from "@/assets/authority/admin.png";
 const Authority = () => {
   const missionItems = [
-    "সর্বজনীক প্রযুক্তি ও অত্যাধুনিক চিকিৎসাসেবার মাধ্যমে বিশ্বমানের চোখ সেবা প্রদান।",
-    "দরিদ্র ও অসচ্ছম মানুষের জন্য মানবিক ও সাশ্রয়ী চিকিৎসা নিশ্চিত করা।",
-    "চোখের রোগ প্রতিরোধে জনসচেতনা বৃদ্ধি ও প্রতিরোধমূলক কার্যক্রম পরিচালনা।",
-    "ভুল দৃষ্টিনির্ণয়, চোখের ক্ষতি ও কমিউনিটি প্রোগ্রামের মাধ্যমে দৃষ্টি সংরক্ষণে অবদান রাখা।",
-    "গবেষণা, প্রশিক্ষণ ও উন্নয়নের মাধ্যমে দেশে চোখ চিকিৎসা ব্যবস্থার মানোন্নয়ন।",
+    "সর্বাধুনিক প্রযুক্তি ও অভিজ্ঞ চিকিৎসকের মাধ্যমে বিশ্বমানের চক্ষু সেবা প্রদান।",
+    "দরিদ্র ও অসহায় মানুষের জন্য মানবিক ও সাশ্রয়ী চিকিৎসা নিশ্চিত করা।",
+    "চোখের রোগ প্রতিরোধে জনসচেতনতা বৃদ্ধি ও প্রতিরোধমূলক কার্যক্রম পরিচালনা।",
+    "স্কুল স্ক্রিনিং, চোখের ক্যাম্প ও কমিউনিটি প্রোগ্রামের মাধ্যমে দৃষ্টি সংরক্ষণে অবদান রাখা।",
+    "গবেষণা, প্রশিক্ষণ ও ইনোভেশনের মাধ্যমে দেশের চক্ষু চিকিৎসা ব্যবস্থার মানোন্নয়ন।",
   ];
   return (
     <div className="bg-gradient-to-br from-[#DEFFDE] via-emerald-50 to-[#ffffff] px-4 mt-20 flex flex-col ">
@@ -24,9 +24,9 @@ const Authority = () => {
                     width={50}
                     height={50}
                     alt="qte"
-                    className="absolute -top-6 -left-6 hidden md:block"
+                    className="absolute -top-6 -left-6 hidden md:block object-cover"
                   />
-                  <div className="space-y-4 text-gray-800">
+                  <div className="space-y-4 text-gray-800 font-bangla">
                     <p className="text-base leading-relaxed">
                       চোখ শুধু দৃষ্টির জানালা নয়, এটি জীবনের সৌন্দর্যের অনুভবের
                       পথ। আমাদের লক্ষ্য—প্রতিটি মানুষ যেন সুস্থ, স্বচ্ছ ও সুন্দর
@@ -58,7 +58,7 @@ const Authority = () => {
                       <Image
                         src={ceo}
                         alt="aboutBg"
-                        className="md:h-80 h-full w-full md:w-[17.5rem] md:absolute right-10 top-0"
+                        className="md:h-80 h-full w-full md:w-[17.5rem] md:absolute right-10 top-0 object-cover"
                       />
                     </div>
                   </div>
@@ -112,7 +112,7 @@ const Authority = () => {
             </h2>
             <p className="font-bangla text-gray-700 text-sm mb-3 leading-relaxed">
               {
-                "সবার জন্য উন্নত দৃষ্টি, উন্নত অভিজ্ঞতা। আমাদের ভিশন হলো এমন একটি বাংলাদেশ গড়ে তোলা যেখানে প্রতিটি মানুষ চিকিৎসা পাবে এবং সেই অধিকার সুরক্ষিত থাকবে।"
+                "সবার জন্য উজ্জ্বল দৃষ্টি, উন্নত ভবিষ্যৎ। আমাদের ভিশন হলো এমন একটি বাংলাদেশ গড়ে তোলা যেখানে প্রত্যেক মানুষ মানসম্মত চক্ষু চিকিৎসা পাবে, এবং কেউ অন্ধত্ব বা দৃষ্টিশক্তি হ্রাসের কারণে জীবনে পিছিয়ে থাকবে না।"
               }
             </p>
             <p className="font-bangla text-gray-700 text-sm leading-relaxed">
