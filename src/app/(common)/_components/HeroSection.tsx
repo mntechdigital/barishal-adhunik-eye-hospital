@@ -34,28 +34,28 @@ const HeroSection = () => {
 
                 <div className="inline-flex w-fit">
                   <Link
-                  href="/about"
-                  className="relative group rounded-xl p-[2px] bg-gradient-to-r from-green-400 to-brand/90 shadow-md hover:shadow-2xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-300"
-                  aria-label="আমাদের সম্পর্কে আরও জানুন"
+                    href="/about"
+                    className="relative group rounded-xl p-[2px] bg-gradient-to-r from-green-400 to-brand/90 shadow-md hover:shadow-2xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-green-300"
+                    aria-label="আমাদের সম্পর্কে আরও জানুন"
                   >
-                  {/* Gradient border + glass inner */}
-                  <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-5 py-3 transform transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
-                    <div className="flex flex-col">
-                    <span className="font-bangla text-white text-sm leading-tight">
-                      আমাদের সম্পর্কে আরও
-                    </span>
-                    <span className="text-[11px] text-white/70 mt-0.5">
-                      বিস্তারিত জানুন
-                    </span>
+                    {/* Gradient border + glass inner */}
+                    <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm rounded-lg px-5 py-3 transform transition duration-300 group-hover:-translate-y-0.5 group-hover:scale-105">
+                      <div className="flex flex-col">
+                        <span className="font-bangla text-white text-sm leading-tight">
+                          আমাদের সম্পর্কে আরও
+                        </span>
+                        <span className="text-[11px] text-white/70 mt-0.5">
+                          বিস্তারিত জানুন
+                        </span>
+                      </div>
+
+                      <span className="ml-3 flex items-center justify-center w-10 h-10 rounded-md bg-white/10 transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-6">
+                        <MoveRight className="w-5 h-5 text-white transition-transform" />
+                      </span>
                     </div>
 
-                    <span className="ml-3 flex items-center justify-center w-10 h-10 rounded-md bg-white/10 transition-transform duration-300 group-hover:translate-x-1 group-hover:rotate-6">
-                    <MoveRight className="w-5 h-5 text-white transition-transform" />
-                    </span>
-                  </div>
-
-                  {/* subtle shimmer on hover */}
-                  <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 bg-white/5 blur-md transition-opacity duration-500 group-hover:opacity-100 mix-blend-screen"></span>
+                    {/* subtle shimmer on hover */}
+                    <span className="pointer-events-none absolute inset-0 rounded-xl opacity-0 bg-white/5 blur-md transition-opacity duration-500 group-hover:opacity-100 mix-blend-screen"></span>
                   </Link>
                 </div>
               </div>
@@ -122,7 +122,7 @@ const HeroSection = () => {
           <div className="flex items-center gap-1">
             <CircleDot className="w-4 h-4 text-brand" />
             <h3 className="text-xs font-bangla">
-              ডাক্তারি প্রেসক্রিপশন অনুযায়ী চশমা ও ঔষধ
+              ডাক্তারের প্রেসক্রিপশন অনুযায়ী চশমা ও ঔষধ
             </h3>
           </div>
         </div>
