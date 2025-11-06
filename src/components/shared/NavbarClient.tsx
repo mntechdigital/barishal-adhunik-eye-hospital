@@ -48,14 +48,14 @@ const NavbarClient = () => {
             আমাদের সম্পর্কে
           </Link>
           <Link
-            href="/"
+            href="/our-services"
             className="hover:text-brand transition duration-200 font-bangla py-2 border-b border-gray-700"
             onClick={closeMenu}
           >
             আমাদের সেবা
           </Link>
           <Link
-            href="/"
+            href="/facility"
             className="hover:text-brand transition duration-200 font-bangla py-2 border-b border-gray-700"
             onClick={closeMenu}
           >
@@ -64,7 +64,7 @@ const NavbarClient = () => {
           
           {/* Mobile Contact Button */}
           <div className="bg-brand rounded-sm hover:bg-brand/90 transition duration-200 mt-2">
-            <Link href="/contact" className="grid grid-cols-3" onClick={closeMenu}>
+            <Link href="/service" className="grid grid-cols-3" onClick={closeMenu}>
               <h3 className="font-bangla text-gray-100 col-span-2 py-2 px-3">
                 যোগাযোগ
               </h3>
