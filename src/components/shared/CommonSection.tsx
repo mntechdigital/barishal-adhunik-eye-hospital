@@ -1,6 +1,7 @@
 import { ChevronsRight, Facebook, Phone } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import WhatsAppCall from "./WhatsAppCall";
 
 const CommonSection = ({ title }: { title: string }) => {
   return (
@@ -52,17 +53,8 @@ const CommonSection = ({ title }: { title: string }) => {
             <Facebook className="size-6 text-green-600" />
           </div>
         </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-between gap-0 bg-green-600 hover:bg-green-700 transition-colors rounded-full px-3 pl-1 py-1 shadow-lg hover:shadow-xl border-2 border-white"
-        >
-          <div className="flex items-center justify-center size-8 bg-white rounded-full mr-2">
-            <Phone className="size-6 text-green-600" />
-          </div>
-          <span className="text-white">০১৭০৮-৪৪৫৩৬৩</span>
-        </a>
+        
+        <WhatsAppCall phoneNumber="01708445363" />
       </div>
     </div>
   );
