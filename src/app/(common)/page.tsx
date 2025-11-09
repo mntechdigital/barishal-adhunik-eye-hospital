@@ -7,8 +7,8 @@ import HomeService from "./_components/HomeService";
 const HomePage = () => {
   return (
     <>
-      <HeroSection />
       <Camping />
+      <HeroSection />
       <OurRelationSection />
       <HomeService />
       <EyeCareSection />

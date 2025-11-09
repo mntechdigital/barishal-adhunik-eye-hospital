@@ -38,7 +38,7 @@ const TopNavbar = async () => {
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4" />
             <span className="font-bangla">
-              ১ নং সি এন্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
+              ১ নং সি এন্ড বি পোল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
             </span>
           </div>
         </div>

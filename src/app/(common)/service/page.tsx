@@ -1,12 +1,12 @@
 import CommonSection from "@/components/shared/CommonSection";
 import Image from "next/image";
 import React from "react";
-import avatar from '@/assets/avatar.png'
+import avatar from "@/assets/avatar.png";
 
 const Service = () => {
   return (
     <main className="min-h-screen bg-white">
-       <CommonSection title="যোগাযোগ"/>
+      <CommonSection title="যোগাযোগ" />
       {/* Header */}
       <div className="">
         <div className="max-w-6xl mx-auto px-4 py-6 md:py-12 text-center">
@@ -59,15 +59,19 @@ const Service = () => {
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-              </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
               </button>
             </div>
           </div>
           {/* Address Card */}
-          
+
           <div className="border  border-gray-200 p-6 rounded-md shadow-md hover:shadow-sm transition-shadow">
             <h3 className="text-lg font-light text-gray-900 mb-2 font-bangla">
               ঠিকানা
@@ -76,17 +80,21 @@ const Service = () => {
             <div className="flex justify-between items-center h-full">
               <div className="space-y-2 ">
                 <p className="text-sm text-gray-600 font-bangla font-semibold">
-                  ১ নং সি এন্ড বি পুল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ  
+                  ১ নং সি এন্ড বি পোল, সি এন্ড বি রোড, বরিশাল, বাংলাদেশ
                 </p>
               </div>
               <button className="w-10 h-10 rounded-md bg-brand text-white flex items-center justify-center hover:bg-green-500 transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  fillRule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clipRule="evenodd"
-                />
-              </svg>
+                <svg
+                  className="w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </button>
             </div>
           </div>
@@ -111,34 +119,40 @@ const Service = () => {
           {/* Left Info */}
           <div className="border border-gray-200 p-6 rounded-md shadow-md">
             <h3 className="text-lg font-light text-gray-700 mb-3 font-bangla">
-              বরিশাল আধুনিক চক্ষু হাসপাতাল 
+              বরিশাল আধুনিক চক্ষু হাসপাতাল
             </h3>
             <h4 className="text-base font-light text-brand mb-4 font-bangla">
               ভিশন সেন্টার (বৈঠাকাটা শাখা)
             </h4>
             <p className="text-sm text-gray-700 leading-relaxed font-bangla font-semibold">
-              <span className="text-brand">অবস্থান:</span>  বৈঠাকাটা বাজার, কলেজ রোড।থানা :নাজিরপুর, জেলা: পিরোজপুর
+              <span className="text-brand">অবস্থান:</span> বৈঠাকাটা বাজার, কলেজ
+              রোড।থানা :নাজিরপুর, জেলা: পিরোজপুর
             </p>
           </div>
 
           {/* Right Info */}
           <div className="border border-gray-200 p-6 rounded-md shadow-md">
             <h3 className="text-lg font-light text-grey-700 mb-3 font-bangla">
-              বরিশাল আধুনিক চক্ষু হাসপাতাল 
+              বরিশাল আধুনিক চক্ষু হাসপাতাল
             </h3>
             <h4 className="text-base font-light text-brand mb-4 font-bangla">
-             ভিশন সেন্টার (মঠবাড়িয়া শাখা)
+              ভিশন সেন্টার (মঠবাড়িয়া শাখা)
             </h4>
             <p className="text-sm text-gray-700 leading-relaxed font-bangla font-semibold">
-              <span className="text-brand">অবস্থান:</span>তুষখালী রোড,মঠবাড়িয়া পৌরসভা ৫ নং ওয়ার্ড  পিরোজপুর বাস স্ট্যান্ড               
-                 সংলগ্ন, ওয়ালটন প্লাজার পাশে। 
-                 থানা: মঠবাড়িয়া, জেলা পিরোজপুর।
+              <span className="text-brand">অবস্থান:</span>তুষখালী রোড,মঠবাড়িয়া
+              পৌরসভা ৫ নং ওয়ার্ড পিরোজপুর বাস স্ট্যান্ড সংলগ্ন, ওয়ালটন প্লাজার
+              পাশে। থানা: মঠবাড়িয়া, জেলা পিরোজপুর।
             </p>
           </div>
         </div>
-        <Image src={avatar} alt="" width={1000} height={100} className="w-[70%]"/>
+        <Image
+          src={avatar}
+          alt=""
+          width={1000}
+          height={100}
+          className="w-[70%]"
+        />
       </div>
-
     </main>
   );
 };
