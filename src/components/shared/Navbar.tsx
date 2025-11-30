@@ -23,7 +23,7 @@ const Navbar = () => {
               />
               <div>
                 <h1
-                  className="font-black text-brand text-2xl font-bangla
+                  className="font-black text-brand  text-2xl font-bangla
 "
                 >
                   বরিশাল আধুনিক চক্ষু হাসপাতাল
