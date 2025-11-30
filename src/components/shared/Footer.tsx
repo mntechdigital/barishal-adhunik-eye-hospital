@@ -16,7 +16,7 @@ const Footer = () => {
               <Link href={"/"} className="flex items-center gap-3 mb-6">
                 <Image src={logo} alt="logo" className="w-16" />
                 <h1
-                  className="font-black text-brand text-shadow-lg text-3xl font-bangla
+                  className="font-black text-white text-shadow-lg text-3xl font-bangla
 "
                 >
                   বরিশাল আধুনিক চক্ষু হাসপাতাল
