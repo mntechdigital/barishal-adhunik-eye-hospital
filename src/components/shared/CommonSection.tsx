@@ -1,4 +1,4 @@
-import { ChevronsRight, Facebook, Phone } from "lucide-react";
+import { ChevronsRight, Facebook } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 import WhatsAppCall from "./WhatsAppCall";

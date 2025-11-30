@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-brand: #008000;
+  --color-brand: #21A549;
 }
 
 body {

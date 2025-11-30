@@ -14,18 +14,18 @@ const HeroSection = () => {
         }}
         className="absolute inset-0 hero_bottom_curve"
       >
-        <div className="absolute inset-0 w-full h-full bg-green-900 opacity-100" />
+        <div className="absolute inset-0 w-full h-full bg-[#099c35] opacity-90" />
         <div className="relative h-full z-10 flex items-center justify-center text-gray-100">
           <div className="container mx-auto px-4 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
               {/* Left Side - Content */}
               <div className="flex flex-col gap-6 text-left animate-fade-in-up">
                 <div className="flex items-center gap-3">
-                  <Activity className="w-4 h-4 text-green-500 animate-pulse" />
-                  <h3 className="font-bangla text-sm lg:text-base text-green-500">
+                  <Activity className="w-4 h-4 text-white animate-pulse" />
+                  <h3 className="font-bangla text-sm lg:text-base text-white">
                     বরিশাল আধুনিক চক্ষু হাসপাতাল
                   </h3>
-                  <Activity className="w-4 h-4 text-green-500 animate-pulse" />
+                  <Activity className="w-4 h-4 text-white animate-pulse" />
                 </div>
 
                 <h1 className="text-3xl lg:text-5xl font-bangla font-black leading-tight lg:leading-snug">
