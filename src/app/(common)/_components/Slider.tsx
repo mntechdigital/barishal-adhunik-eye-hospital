@@ -101,9 +101,9 @@ const Slider = ({
                   alt={`slide-${slide.id}`}
                   width={1000}
                   height={1000}
-                  className={`w-full  object-cover mb-4 transition-all duration-300 ${
+                  className={`w-full object-cover mb-4 transition-all duration-300 ${
                     !slide?.description
-                      ? "rounded-md h-[14rem]"
+                      ? "rounded-md object-contain"
                       : "rounded-t-md h-[10rem]"
                   } ${isTransitioning ? "brightness-95" : "brightness-100"}`}
                 />
