@@ -88,7 +88,7 @@ const CreateCampaign = () => {
               name="image"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Campaign Image</FormLabel>
+                  <FormLabel>Campaign Image (Must be 268x400 pixels)</FormLabel>
                   <FormControl>
                     <Input
                       type="file"
